@@ -7,5 +7,5 @@ class ContactMeForm(FlaskForm):
 
     name = StringField("Name", validators=[DataRequired()])
     email = StringField("Email", validators=[DataRequired(), Email()])
-    content = TextAreaField("Content", validators=[DataRequired()])
+    content = TextAreaField("Message", validators=[DataRequired()])
     submit = SubmitField("Contact Me")

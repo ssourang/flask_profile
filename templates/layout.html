@@ -34,10 +34,22 @@
             </div>
         </nav>
     </header>
+    <div class="col-md-8 center-align">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        {% for category, message in messages %}
+        <div class="alert alert-{{ category }} center-align">
+            <span style="padding-left:90px">{{ message }}</span>
+        </div>
+        {% endfor %}
+        {% endif %}
+
+        {% endwith %}
+    </div>
     <div class='intro'>
         <div class="intro-par"><br>
             <h1>I'm Serigne,</h1>
-            <img id="my_profile" src="./static/pictures/my_profile.png" alt="elg image intro" width="200"
+            <img class="center-align" src="./static/pictures/my_profile.png" alt="elg image intro" width="200"
                 height="200"><br>
             <p>an electrical engineering student, python developer and entrepreneur.</p>
         </div>

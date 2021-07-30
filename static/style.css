@@ -33,13 +33,18 @@ body {
     font-weight: 500;
   }
   
+  .content {
+    text-align: center;
+    background-color: #d4bb75;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
   .content-section {
     background: #ffffff;
-    padding: 10px 20px;
-    border: 1px solid #dddddd;
-    border-radius: 3px;
-    margin-bottom: 20px;
     text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     background-color: #B2B1B9;
   }
   
@@ -96,16 +101,18 @@ body {
 
   .intro {
       background-color: #53B8BB;
+      padding-bottom: 2rem;
   }
 
   .intro-par {
       text-align: center;
   }
 
-#my_profile {
+.center-align {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0px;
 }
 
 .expertise-imgs {
@@ -127,3 +134,14 @@ img:hover {
     transform: scale(1.1);
 }
 
+.contact-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* .contact-format {
+    padding: 0px;
+    margin: 0px;
+} */

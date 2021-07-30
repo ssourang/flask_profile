@@ -1,6 +1,33 @@
-{% extends 'layout.html' %} 
+{% extends 'layout.html' %}
 
 
 {% block content %}
-
+<div class="content-section contact-align">
+    <form action="" method="POST" class="row g-3">
+        {{ form.hidden_tag() }}
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4">Get In Touch</legend>
+            <div class="form-group">
+                {{ form.name.label(class="form-control-label") }}
+                {{ form.name(class="form-control") }}
+            </div>
+            <div class="form-group">
+                {{ form.email.label(class="form-control-label") }}
+                {{ form.email(class="form-control") }}
+            </div>
+            <div class="form-group">
+                {{ form.content.label(class="form-control-label") }}
+                {{ form.content(class="form-control") }}
+            </div>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-outline-info") }}
+            </div>
+        </fieldset>
+        
+    </form>
+</div>
+<div class="content-section">
+    <a class="footer-link" href="https://www.linkedin.com/in/serignesourang/">LinkedIn</a>
+    <p class="copyright">© {{ current_year }} Serigne Saliou Mbacke Sourang.</p>
+</div>
 {% endblock %}
