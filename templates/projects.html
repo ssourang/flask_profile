@@ -2,32 +2,48 @@
 
 
 {% block content %}
+
+<div class="content">
+    <legend><span class="projects">Projects</span></legend><br>
+    <ul>
+        {% for repo in repos %}
+        <a href="{{ repo['url'] }}">
+            <li>{{ repo['name'] }} - {{ repo['desc'] }}</li>
+        </a>
+        {% endfor %}
+    </ul>
+</div>
 <div class="content-section contact-align">
     <form action="" method="POST" class="row g-3">
         {{ form.hidden_tag() }}
         <fieldset class="form-group">
-            <legend class="border-bottom mb-4">Get In Touch</legend>
+            <legend class="projects get-in-touch">Get In Touch</legend>
             <div class="form-group">
                 {{ form.name.label(class="form-control-label") }}
-                {{ form.name(class="form-control") }}
+                {{ form.name(class="form-control form-control-lg") }}
             </div>
             <div class="form-group">
                 {{ form.email.label(class="form-control-label") }}
-                {{ form.email(class="form-control") }}
+                {{ form.email(class="form-control form-control-lg") }}
             </div>
             <div class="form-group">
                 {{ form.content.label(class="form-control-label") }}
-                {{ form.content(class="form-control") }}
+                {{ form.content(class="form-control form-control-lg input-lg") }}
             </div>
             <div class="form-group">
                 {{ form.submit(class="btn btn-outline-info") }}
             </div>
         </fieldset>
-        
+
     </form>
 </div>
-<div class="content-section">
-    <a class="footer-link" href="https://www.linkedin.com/in/serignesourang/">LinkedIn</a>
+<div class="my-footer">
+    <div id="idLinkedInIcon" onclick="window.open('https://www.linkedin.com/in/serignesourang/');"
+        title="LinkedIn Profile">in
+    </div>
+    <a class="github" href="https://github.com/ssourang?tab=repositories">
+        <i class="fa fa-github" style="font-size:40px"></i>
+    </a><br><br>
     <p class="copyright">© {{ current_year }} Serigne Saliou Mbacke Sourang.</p>
 </div>
 {% endblock %}

@@ -3,6 +3,23 @@ from flask import Flask, flash, render_template, redirect, url_for
 from forms import ContactMeForm
 import os
 import smtplib
+import requests
+
+github_projects_url = "https://api.github.com/users/ssourang/repos"
+
+github_response = requests.get(github_projects_url).json()
+
+repos = []
+
+for project in github_response:
+    name = project["name"]
+    desc = project["description"]
+    url = project["html_url"]
+
+    repos.append({"name": name, "desc": desc, "url": url})
+
+
+# print(github_response)
 
 
 app = Flask(__name__)
@@ -57,7 +74,9 @@ def projects():
             "Thank you, your message has been sent successfully ✔️ I will get back to you shortly.",
             "success",
         )
-    return render_template("projects.html", form=form, current_year=current_year())
+    return render_template(
+        "projects.html", form=form, current_year=current_year(), repos=repos
+    )
 
 
 @app.route("/about")

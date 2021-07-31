@@ -8,6 +8,13 @@ body {
     color: #444444;
   }
   
+  .github {
+      color:#181313;
+      padding-left: 10px;
+    }         /* Unvisited link  */
+  .github:visited {color:#0a0c0a;} /* Visited link    */
+  .github:hover {color:#2c2929;}   /* Mouse over link */
+  .github:active {color:#0c0c0e;}  /* Selected link   */
 
   .bg-steel {
     background-color: #5f788a;
@@ -32,6 +39,31 @@ body {
   .site-header .navbar-nav .nav-link.active {
     font-weight: 500;
   }
+
+  .input-lg {
+      height: 150px
+  }
+
+  .my-footer {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #b89496;
+
+  }
+
+#idLinkedInIcon{background-color:rgb(0, 102, 170);border-radius:6px;color:white;cursor:pointer;display:inline-block;font:bold 35px Arial, Helvetica, sans-serif;height:40px;margin-top:1px;text-align:center;width:40px;}
+#idLinkedInIcon:hover{background-color:rgb(12, 77, 151);}
+
+/* 
+  .input-fields {
+
+    width: 200%;
+
+    margin-left: auto;
+    margin-right: auto;
+} */
+
   
   .content {
     text-align: center;
@@ -123,6 +155,17 @@ body {
     text-align: center;
 }
 
+h2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding: 0px;
+    justify-content: center;
+    text-align: center;
+}
+
 img {
     display: inline-flex;
     transition: 2s;
@@ -141,7 +184,32 @@ img:hover {
     text-align: center;
 }
 
-/* .contact-format {
-    padding: 0px;
-    margin: 0px;
-} */
+.projects {
+    border-bottom: 1px solid white;
+    padding: 0px 25px 5px 25px;
+    /* text-align: center; */
+    /* width: 200px;
+    border-right: 0px;
+    border-top: 1px;
+    border: thin solid white; */
+}
+
+
+.get-in-touch {
+    margin-bottom: 30px;
+}
+
+
+ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+
+
+  background: url('https://api.iconify.design/logos-github-icon.svg') no-repeat center center / contain;
+
+  content: url('https://api.iconify.design/logos-github-icon.svg?height=16');
+vertical-align: -0.125em;
