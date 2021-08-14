@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<h1> {{ post_name }} </h1>
+
+<ul>
+    {% for post in blog_posts %}
+    <a href="/blog/{{ post['name'] }}">
+        <li>{{ post['name'] }} - {{ post['date'] }}</li>
+    </a>
+    {% endfor %}
+</ul>
+
+
+<div class="my-footer">
+    <div id="idLinkedInIcon" onclick="window.open('https://www.linkedin.com/in/serignesourang/');"
+        title="LinkedIn Profile">in
+    </div>
+    <a class="github" href="https://github.com/ssourang?tab=repositories">
+        <i class="fa fa-github" style="font-size:40px"></i>
+    </a><br><br>
+    <p style="font-size:10px" class="copyright">© {{ current_year }} Serigne Saliou Mbacke Sourang.</p>
+</div>
+{% endblock %}

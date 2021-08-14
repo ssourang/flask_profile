@@ -25,10 +25,12 @@
                     <div class="navbar-nav mr-auto">
                         <a class="nav-item nav-link" href="{{ url_for('home') }}">Home</a>
                         <a class="nav-item nav-link" href="{{ url_for('about') }}">About</a>
+                        <a class="nav-item nav-link" href="{{ url_for('projects') }}">Projects</a>
                     </div>
                     <!-- Navbar Right Side -->
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="{{ url_for('projects') }}">Projects</a>
+                        <a class="nav-item nav-link" href="{{ url_for('blog') }}">Blog</a>
+                        <!-- <a class="nav-item nav-link" href="http://172.105.26.121">Blog</a> -->
 
                     </div>
                 </div>
@@ -46,20 +48,6 @@
         {% endif %}
 
         {% endwith %}
-    </div>
-    <div class='intro'>
-        <div class="intro-par"><br>
-            <h1>I'm Serigne,</h1>
-            <img class="center-align" src="./static/pictures/my_profile.png" alt="elg image intro" width="200"
-                height="200"><br>
-            <p>an electrical engineering student, python developer and entrepreneur.</p>
-        </div>
-
-        <div class=expertise-imgs>
-            <img src="./static/pictures/elg_intro.png" alt="elg image intro" width="250" height="200">
-            <img src="./static/pictures/python_intro.png" alt="python image intro" width="250" height="200">
-            <img src="./static/pictures/entrprn_intro.png" alt="entrprn image intro" width="250" height="200"><br><br>
-        </div>
     </div>
     {% block content %}{% endblock %}
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
