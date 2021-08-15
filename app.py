@@ -23,7 +23,9 @@ with os.scandir("blog") as blog_folder:
         if file.name.endswith(".md") and file.is_file():
             raw_post_date, _ = file.name.split("_")
             print(raw_post_date, _)
-            post_date = datetime.strptime(raw_post_date, "%Y-%m-%d").strftime("%B-%d, %Y")
+            post_date = datetime.strptime(raw_post_date, "%Y-%m-%d").strftime(
+                "%B-%d, %Y"
+            )
             post_name = _.split(".")[0]
             post_data = markdown(Path(file.path).read_text())
             blog_posts.append({"name": post_name, "date": post_date, "data": post_data})

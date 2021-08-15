@@ -1,6 +1,8 @@
 coffee_machine=https://user-images.githubusercontent.com/55968528/129448172-5f851c16-954b-450a-a795-4c42223de22e.gif
 CV=https://user-images.githubusercontent.com/55968528/129448803-0e459cc2-c3c7-47fe-a8b2-a7be8d73b446.PNG
 flashy_words=https://user-images.githubusercontent.com/55968528/127800925-96ddbf06-3ee5-4f4d-b099-bbae7ac24da3.gif
+flask_num_guess=https://user-images.githubusercontent.com/55968528/129483560-47933a25-b885-487f-a595-b20b15dec6b7.gif
+flask_profile=https://user-images.githubusercontent.com/55968528/129484362-99e4f054-ada7-4254-8904-168338485be2.png
 m_to_km=https://user-images.githubusercontent.com/55968528/127799173-23ade9f1-a62d-4687-8d2f-0e8c3c3edba6.gif
 turtle_race=https://user-images.githubusercontent.com/55968528/127800711-7f9da040-2b11-4e99-a464-57c06b84736d.gif
 turtle_race=https://user-images.githubusercontent.com/55968528/127800711-7f9da040-2b11-4e99-a464-57c06b84736d.gif
