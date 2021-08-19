@@ -4,7 +4,7 @@
 
 <h1> {{ post_name }} </h1>
 <div class="blog-listing">
-    <ul>
+    <ul class="blog-posting">
         {% for post in blog_posts %}
         <a href="/blog/{{ post['name'] }}">
             <li>{{ post['name'] }} - {{ post['date'] }}</li>

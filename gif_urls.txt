@@ -9,6 +9,3 @@ pong_game=https://user-images.githubusercontent.com/55968528/129485367-1af1b38b-
 capstone=https://user-images.githubusercontent.com/55968528/129496296-62d3fcc6-f331-4b3a-bd8d-b1c999dd935a.gif
 selenium_price_drop=https://user-images.githubusercontent.com/55968528/129496916-27629a3d-8fef-49bc-86c1-d0864526822a.gif
 turtle_race=https://user-images.githubusercontent.com/55968528/127800711-7f9da040-2b11-4e99-a464-57c06b84736d.gif
-turtle_race=https://user-images.githubusercontent.com/55968528/127800711-7f9da040-2b11-4e99-a464-57c06b84736d.gif
-turtle_race=https://user-images.githubusercontent.com/55968528/127800711-7f9da040-2b11-4e99-a464-57c06b84736d.gif
-

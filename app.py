@@ -3,7 +3,6 @@ from flask import Flask, flash, render_template, redirect, url_for
 from forms import ContactMeForm
 from markdown import markdown
 from pathlib import Path
-from jinja2.ext import loopcontrols
 import os
 import smtplib
 import requests
@@ -40,11 +39,6 @@ with os.scandir("blog") as blog_folder:
             )
             blog_posts.append({"name": post_name, "date": post_date, "data": post_data})
 
-# print(blog_posts)
-
-
-# exit(0)
-
 
 with open("gif_urls.txt") as gif_file:
     for line in gif_file:
@@ -53,8 +47,6 @@ with open("gif_urls.txt") as gif_file:
         gif_url = line.strip().split("=")[1]
         gif_urls.append({"gif_url": gif_url})
 
-
-# exit(0)
 
 for i, project in enumerate(github_response):
     name = project["name"]
@@ -65,11 +57,9 @@ for i, project in enumerate(github_response):
         {"name": name, "desc": desc, "url": url, "gif_url": gif_urls[i]["gif_url"]}
     )
 
-# exit(0)
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "willchangelater"
-app.jinja_env.add_extension("jinja2.ext.loopcontrols")
 
 YAHOO_EMAIL = os.environ.get("YAHOO_EMAIL")
 YAHOO_PASSWORD = os.environ.get("YAHOO_PASSWORD")

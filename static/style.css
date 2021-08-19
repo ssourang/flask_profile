@@ -47,16 +47,21 @@ font-weight: 500;
 }
 
 .my-footer {
-margin:0%;
 text-align: center;
 padding-top: 1rem;
-padding-bottom: 0.5rem;
+padding-bottom: 1rem;
 background-color: #b89496;
 }
 
 .blog-listing {
     padding-top: 2rem;
     text-align: center;
+}
+
+.blog-posting {
+    display: table;
+    text-align: start;
+    margin: 0 auto;
 }
 
 #idLinkedInIcon{background-color:rgb(0, 102, 170);border-radius:6px;color:white;cursor:pointer;display:inline-block;font:bold 35px Arial, Helvetica, sans-serif;height:40px;margin-top:1px;text-align:center;width:40px;}
@@ -175,13 +180,6 @@ text-align: left;
 .contact-section {
 margin: 0 auto;
 }
-/* border-bottom: 1px solid white;
-padding: 0px 25px 5px 25px; */
-/* text-align: center; */
-/* width: 200px;
-border-right: 0px;
-border-top: 1px;
-border: thin solid white; */
 
 
 .section-bottom-border {
@@ -194,10 +192,16 @@ margin-bottom: 30px;
 }
 
 
-ul {
+.projects {
 display: inline-block;
 list-style-type: none;
 text-align: left;
+}
+
+.work-experience-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
 }
 
 .list-projects-format {
@@ -211,6 +215,12 @@ padding: 10px 20px;
 border: 1px solid #dddddd;
 border-radius: 3px;
 margin-bottom: 20px;
+}
+
+.tasks{
+  display: table;
+  text-align:start;
+  margin: 0 auto;
 }
 
 /* ---------------------- Markdown Code Syntax Highlighting -----------------------*/
