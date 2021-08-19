@@ -3,6 +3,7 @@ from flask import Flask, flash, render_template, redirect, url_for
 from forms import ContactMeForm
 from markdown import markdown
 from pathlib import Path
+from jinja2.ext import loopcontrols
 import os
 import smtplib
 import requests
@@ -27,7 +28,16 @@ with os.scandir("blog") as blog_folder:
                 "%B-%d, %Y"
             )
             post_name = _.split(".")[0]
-            post_data = markdown(Path(file.path).read_text())
+            post_data = markdown(
+                Path(file.path).read_text(),
+                extensions=[
+                    "fenced_code",
+                    "codehilite",
+                    "nl2br",
+                    "markdown_captions",
+                    "md_in_html",
+                ],
+            )
             blog_posts.append({"name": post_name, "date": post_date, "data": post_data})
 
 # print(blog_posts)
@@ -59,6 +69,7 @@ for i, project in enumerate(github_response):
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "willchangelater"
+app.jinja_env.add_extension("jinja2.ext.loopcontrols")
 
 YAHOO_EMAIL = os.environ.get("YAHOO_EMAIL")
 YAHOO_PASSWORD = os.environ.get("YAHOO_PASSWORD")

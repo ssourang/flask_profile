@@ -12,12 +12,12 @@
                 <li class="list-projects-format">{{ repo['name'] }}</li>
             </a>
             <div class="gif-space">
-                {% if repo['name'] == 'flask-profile'  %}
+                {% if repo['name'] == 'flask-profile' %}
                 <a href="https://medium.com/@Suretek_infosoft/top-web-development-frameworks-2019-a32b4c0db379">
                     <img class="gif" src="{{ repo['gif_url'] }}" width=50%>
                 </a>
                 {% else %}
-                    <img class="gif" src="{{ repo['gif_url'] }}" width=50%>
+                <img class="gif" src="{{ repo['gif_url'] }}" width=50%>
                 {% endif %}
                 <p style="font-size:20px" class=gif-par-space> {{ repo['desc'] }}</p>
             </div>

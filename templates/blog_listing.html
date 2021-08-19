@@ -3,14 +3,15 @@
 {% block content %}
 
 <h1> {{ post_name }} </h1>
-
-<ul>
-    {% for post in blog_posts %}
-    <a href="/blog/{{ post['name'] }}">
-        <li>{{ post['name'] }} - {{ post['date'] }}</li>
-    </a>
-    {% endfor %}
-</ul>
+<div class="blog-listing">
+    <ul>
+        {% for post in blog_posts %}
+        <a href="/blog/{{ post['name'] }}">
+            <li>{{ post['name'] }} - {{ post['date'] }}</li>
+        </a> <br>
+        {% endfor %}
+    </ul>
+</div>
 
 
 <div class="my-footer">
