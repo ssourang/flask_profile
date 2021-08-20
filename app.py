@@ -22,7 +22,6 @@ with os.scandir("blog") as blog_folder:
     for file in blog_folder:
         if file.name.endswith(".md") and file.is_file():
             raw_post_date, _ = file.name.split("_")
-            print(raw_post_date, _)
             post_date = datetime.strptime(raw_post_date, "%Y-%m-%d").strftime(
                 "%B-%d, %Y"
             )
@@ -100,6 +99,10 @@ def projects():
 
     form = ContactMeForm()
     if form.validate_on_submit():
+        name = form.name.data
+        email = form.email.data
+        msg = form.content.data
+        send_mail(name, email, msg)
         flash(
             "Thank you, your message has been sent successfully ✔️ I will get back to you shortly.",
             "success",
@@ -109,11 +112,15 @@ def projects():
     )
 
 
-@app.route("/about")
+@app.route("/about", methods=["GET", "POST"])
 def about():
 
     form = ContactMeForm()
     if form.validate_on_submit():
+        name = form.name.data
+        email = form.email.data
+        msg = form.content.data
+        send_mail(name, email, msg)
         flash(
             "Thank you, your message has been sent successfully ✔️ I will get back to you shortly.",
             "success",

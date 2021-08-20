@@ -2,30 +2,30 @@
 
 {% block content %}
 <div class='content'>
-    <h2 class='header-color'>What I do</h2>
-    <p>
+    <h2 class='header-color'>What I do</h2><br>
+    <p class="about-padding tasks par-space">
         I help companies design, implement and test electrical devices and equipment, including but not limited to
         navigation systems, communication systems. I compose technical reports by collecting, analyzing and summarizing
         data. I prioritize effectiveness by crontributing to team effort and focusing on the proper accomplishment of my
         tasks in a timely manner.
-    </p>
+    </p><br>
 
-    <h2 class='header-color'>Interests</h2>
-    <p>
+    <h2 class='header-color'>Interests</h2><br>
+    <p class="about-padding par-space">
         I also have a strong interest and passion to learn about new technologies, data science and machine learning
         with Python programming language.
-    </p>
+    </p><br>
 
-    <h2 class='header-color'>Expertise</h2>
-    <p>
+    <h2 class='header-color'>Expertise</h2><br>
+    <p class="tasks par-space about-padding">
         Electronic Systems, Electronics Troubleshooting, Electronic Testing Design, Analyzing Information,
         Quality Focus, Attention to Detail, Emphasizing Excellence, Customer Service, Manual Software Testing, Data
         Entry, Python, pandas, numpy, Matlab, Simulink, SQL, Microsoft Excel, VHDL, ModelSIM
-    </p>
+    </p><br>
 
-    <h2 class='header-color'>Hobbies</h2>
-    <p class='contact-format'>
-        Hobbies: I like to go to the gym, to play soccer, ping pong and pool.
+    <h2 class='header-color'>Hobbies</h2><br>
+    <p class='about-padding tasks par-space'>
+        Hobbies: I like swimming, to go to the gym, to play soccer, ping pong, pool, playing video games, reading.
     </p>
 </div>
 
@@ -47,7 +47,7 @@
     <form action="" method="POST" class="row g-3">
         {{ form.hidden_tag() }}
         <fieldset class="form-group">
-            <legend class="border-bottom mb-4">Get In Touch</legend>
+            <legend class="border-bottom mb-4 get-in-touch">Get In Touch</legend>
             <div class="form-group">
                 {{ form.name.label(class="form-control-label") }}
                 {{ form.name(class="form-control") }}
