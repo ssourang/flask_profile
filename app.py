@@ -64,6 +64,11 @@ YAHOO_EMAIL = os.environ.get("YAHOO_EMAIL")
 YAHOO_PASSWORD = os.environ.get("YAHOO_PASSWORD")
 MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
 
+print(YAHOO_EMAIL)
+print(YAHOO_PASSWORD)
+print(MAIL_USERNAME)
+
+exit(0)
 
 def send_mail(name, email, msg):
     with smtplib.SMTP("smtp.mail.yahoo.com") as connection:
