@@ -43,27 +43,28 @@
 
 </div>
 
-<div class="content-section contact-align">
+<div class="content-section contact-align contact-section">
     <form action="" method="POST" class="row g-3">
         {{ form.hidden_tag() }}
         <fieldset class="form-group">
-            <legend class="border-bottom mb-4 get-in-touch">Get In Touch</legend>
+            <legend class="section-bottom-border get-in-touch">Get In Touch</legend>
             <div class="form-group">
                 {{ form.name.label(class="form-control-label") }}
-                {{ form.name(class="form-control") }}
+                {{ form.name(class="form-control form-control-lg") }}
             </div>
             <div class="form-group">
                 {{ form.email.label(class="form-control-label") }}
-                {{ form.email(class="form-control") }}
+                {{ form.email(class="form-control form-control-lg") }}
             </div>
             <div class="form-group">
                 {{ form.content.label(class="form-control-label") }}
-                {{ form.content(class="form-control") }}
+                {{ form.content(class="form-control form-control-lg input-lg") }}
             </div>
             <div class="form-group">
                 {{ form.submit(class="btn btn-outline-info") }}
             </div>
         </fieldset>
+
     </form>
 </div>
 <div class="my-footer">

@@ -3,7 +3,6 @@ from flask import Flask, flash, render_template, redirect, url_for
 from forms import ContactMeForm
 from markdown import markdown
 from pathlib import Path
-from time import sleep
 import os
 import smtplib
 import requests
@@ -41,7 +40,7 @@ with os.scandir("blog") as blog_folder:
             blog_posts.append({"name": post_name, "date": post_date, "data": post_data})
 
 
-ordered_blog_posts = sorted(blog_posts, key=lambda t: int(t['name'].split('-')[0]))
+ordered_blog_posts = sorted(blog_posts, key=lambda t: int(t["name"].split("-")[0]))
 
 with open("gif_urls.txt") as gif_file:
     for line in gif_file:
