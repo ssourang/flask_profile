@@ -3,6 +3,7 @@ from flask import Flask, flash, render_template, redirect, url_for
 from forms import ContactMeForm
 from markdown import markdown
 from pathlib import Path
+from time import sleep
 import os
 import smtplib
 import requests
@@ -13,6 +14,7 @@ current_year = datetime.now().year
 github_projects_url = "https://api.github.com/users/ssourang/repos"
 
 github_response = requests.get(github_projects_url).json()
+
 
 gif_urls = []
 repos = []
@@ -38,6 +40,8 @@ with os.scandir("blog") as blog_folder:
             )
             blog_posts.append({"name": post_name, "date": post_date, "data": post_data})
 
+
+ordered_blog_posts = sorted(blog_posts, key=lambda t: int(t['name'].split('-')[0]))
 
 with open("gif_urls.txt") as gif_file:
     for line in gif_file:
@@ -136,7 +140,7 @@ def blog_listing(post_name):
                 "blog_entry.html",
                 current_year=current_year,
                 post=post,
-                blog_posts=blog_posts,
+                blog_posts=ordered_blog_posts,
             )
     return "<h1>Oops! Sorry, Blog Post Not Found</h1>"
 
@@ -146,7 +150,7 @@ def blog():
     return render_template(
         "blog_listing.html",
         current_year=current_year,
-        blog_posts=blog_posts,
+        blog_posts=ordered_blog_posts,
     )
 
 

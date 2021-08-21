@@ -127,7 +127,23 @@ float: left;
 margin-right: 60px;
 margin-top: 0px;
 }
+/* 
+.blog-margin{
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+} */
 
+/* 
+.blog-par-space{
+text-align: justify;
+margin-right: 50px;
+margin-left: 50px;
+line-height: 2;
+} */
 
 .par-space {
 text-align: justify;
@@ -221,10 +237,14 @@ margin-bottom: 2rem;
 
 .blog-section {
 background: #ffffff;
-padding: 10px 20px;
 border: 1px solid #dddddd;
 border-radius: 3px;
 margin-bottom: 20px;
+padding: 50px 50px;
+text-align: justify;
+margin-right: 80px;
+margin-left: 80px;
+line-height: 2;
 }
 
 .tasks{
