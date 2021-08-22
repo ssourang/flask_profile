@@ -12,11 +12,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .github {
     color:#181313;
-    padding-left: 10px;
+    padding-left: 20px;
 }         /* Unvisited link  */
 .github:visited {color:#0a0c0a;} /* Visited link    */
 .github:hover {color:#2c2929;}   /* Mouse over link */
 .github:active {color:#0c0c0e;}  /* Selected link   */
+
+.mail-me {
+    color:rgb(182, 78, 78);
+    padding-left: 10px;
+}
+
+.mail-me:visited {color:#e45937;} /* Visited link    */
+.mail-me:hover {color:#a3361be8;}   /* Mouse over link */
+.mail-me:active {color:#a5450d;}  /* Selected link   */
+
 
 .bg-steel {
 background-color: #5f788a;
