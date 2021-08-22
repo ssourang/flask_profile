@@ -63,17 +63,17 @@ for i, project in enumerate(github_response):
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "willchangelater"
 
-YAHOO_EMAIL = os.environ.get("YAHOO_EMAIL")
-YAHOO_PASSWORD = os.environ.get("YAHOO_PASSWORD")
+
 MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
+MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
 
 
 def send_mail(name, email, msg):
-    with smtplib.SMTP("smtp.mail.yahoo.com") as connection:
+    with smtplib.SMTP("smtp.gmail.com") as connection:
         connection.starttls()
-        connection.login(user=YAHOO_EMAIL, password=YAHOO_PASSWORD)
+        connection.login(user=MAIL_USERNAME, password=MAIL_PASSWORD)
         connection.sendmail(
-            from_addr=YAHOO_EMAIL,
+            from_addr=MAIL_USERNAME,
             to_addrs=MAIL_USERNAME,
             msg=f"""Subject: Get In Touch\n\nFrom your portfolio Website:\n\nName: {name}
 \nEmail: {email}\n\nMessage: {msg}""",

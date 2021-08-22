@@ -240,6 +240,11 @@ text-align: left;
     text-align: center;
 }
 
+.wrapper{
+    width: 70vw;
+    margin: 0 auto;
+}
+
 .list-projects-format {
 margin-top: 2rem;
 margin-bottom: 2rem;
@@ -258,13 +263,27 @@ line-height: 2;
 }
 
 .tasks{
-  display: table;
+  /* display: table; */
   text-align:start;
-  margin: 0 auto;
+}
+
+.centered-items {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+}
+
+pre {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI";
+    font-size: 0.92rem;
+}
+
+.ref-comments-list {
+    list-style-type: none;
 }
 
 /* ---------------------- Markdown Code Syntax Highlighting -----------------------*/
-pre { line-height: 125%; }
+/* pre { line-height: 125%; } */
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
 span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
 td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
