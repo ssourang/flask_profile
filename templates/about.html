@@ -29,20 +29,6 @@
     </p>
 </div>
 
-<div class="col-md-8">
-    {% with messages = get_flashed_messages(with_categories=true) %}
-    {% if messages %}
-    {% for category, message in messages %}
-    <div class="alert alert-{{ category }}">
-        {{ message }}
-    </div>
-    {% endfor %}
-    {% endif %}
-
-    {% endwith %}
-
-</div>
-
 <div class="content-section contact-align contact-section">
     <form action="" method="POST" class="row g-3">
         {{ form.hidden_tag() }}
@@ -71,6 +57,9 @@
     <div id="idLinkedInIcon" onclick="window.open('https://www.linkedin.com/in/serignesourang/');"
         title="LinkedIn Profile">in
     </div>
+    <a class="mail-me" href="mailto:ssmsourang@gmail.com">
+        <i class="fa fa-envelope mail-me" title="Mail me" style="font-size:40px"></i>
+    </a>
     <a class="github" href="https://github.com/ssourang?tab=repositories">
         <i class="fa fa-github" style="font-size:40px"></i>
     </a><br><br>

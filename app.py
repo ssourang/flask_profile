@@ -110,6 +110,7 @@ def projects():
             "Thank you, your message has been sent successfully ✔️ I will get back to you shortly.",
             "success",
         )
+        return redirect(url_for("projects"))
     return render_template(
         "projects.html", form=form, current_year=current_year, repos=repos
     )
@@ -128,6 +129,7 @@ def about():
             "Thank you, your message has been sent successfully ✔️ I will get back to you shortly.",
             "success",
         )
+        return redirect(url_for("about"))
     return render_template("about.html", form=form, current_year=current_year)
 
 
