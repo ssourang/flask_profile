@@ -11,7 +11,7 @@ The first command that we are going to talk about is:
 
 It basically lists the current working directory:
 
-![](https://user-images.githubusercontent.com/55968528/129979403-e2a9d69e-d46e-4310-89ee-850fd7927f97.png)
+![](https://user-images.githubusercontent.com/55968528/130370816-8a970b54-0f52-4480-9b43-db330ee5a4e4.png)
 
 As you can see above, my current working directory has 2 folders and 1 **.txt** file.
 
@@ -23,15 +23,15 @@ Now to move into a different directory, you must use the command:
 
 which stands for *change directory*:
 
-![](https://user-images.githubusercontent.com/55968528/130364976-41f12944-8ba9-4479-8ec5-bcbd6df745b5.png)
+![](https://user-images.githubusercontent.com/55968528/130370913-13bdae86-34b7-4e62-84f1-1a1cea306108.png)
 
 In this case, you can see that we are currently in the folder1 directory. If I type `ls` again, you can see that I have another folder:
 
-![](https://user-images.githubusercontent.com/55968528/130364431-11cf06dd-7dcd-40a4-9c2a-870f43a82d87.png)
+![](https://user-images.githubusercontent.com/55968528/130371037-4550bba0-7f00-4f98-b83c-559cd9faa522.png)
 
 Navigating to that folder with `cd subfolder1`  we now see that **subfolder1/** is empty:
 
-![](https://user-images.githubusercontent.com/55968528/130364366-c8d5465b-8029-44d2-92e5-531873e2a709.png)
+![](https://user-images.githubusercontent.com/55968528/130370996-9b71c811-1c42-4140-a7ed-c0cac9369724.png)
 
 Now at this point, you might wonder how can we move back a directory, or all the way to our starting point ?
 
@@ -43,7 +43,7 @@ Well to move back to the parent directory, you can use:
 
 As you can see, you need to add 2 dots to `cd` because 1 dot means for the current directory and 2 means the parent directory:
 
-![](https://user-images.githubusercontent.com/55968528/130364839-e2ea8e2e-7aed-4b44-ba0b-648a82a6ba15.png)
+![](https://user-images.githubusercontent.com/55968528/130371091-50b7b23c-44c9-430f-86b1-06058f95f429.png)
 
 To move up 2 directories, use:
 
@@ -51,6 +51,6 @@ To move up 2 directories, use:
   cd ../..
 ```
 
-![](https://user-images.githubusercontent.com/55968528/130364900-4e2cacc2-5363-4351-8f2f-0652249e6385.png)
+![](https://user-images.githubusercontent.com/55968528/130371123-d394fb91-27ad-42b3-a64b-6e3994be2dd9.png)
 
 **More on the way ...**

@@ -215,6 +215,15 @@ margin-top: 30px;
 text-align: left;
 }
 
+/* 
+.project-section {
+    width: 100%;
+    margin-right: 40px;
+    margin-left: 5px;
+    margin-top: 30px;
+    text-align: left;
+    }
+     */
 
 .contact-section {
 margin: 0 auto;
@@ -259,10 +268,11 @@ background: #ffffff;
 border: 1px solid #dddddd;
 border-radius: 3px;
 margin-bottom: 20px;
-padding: 50px 50px;
+margin-top: 20px;
+padding: 20px 20px;
 text-align: justify;
-margin-right: 80px;
-margin-left: 80px;
+margin-right: 20px;
+margin-left: 20px;
 line-height: 2;
 }
 
@@ -284,6 +294,28 @@ pre {
 
 .ref-comments-list {
     list-style-type: none;
+}
+
+h3{
+   text-decoration: underline; 
+}
+
+hr {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
 }
 
 /* ---------------------- Markdown Code Syntax Highlighting -----------------------*/
